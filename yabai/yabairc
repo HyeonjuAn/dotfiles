@@ -1,0 +1,53 @@
+# Specific Window Config
+#yabai -m config --space 7 layout float
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# window modifications
+yabai -m config window_opacity on
+
+# Transparency
+yabai -m config window_border_blur off
+# yabai -m config active_window_opacity 0.85
+yabai -m config active_window_opacity 1.00
+yabai -m config normal_window_opacity 0.85
+
+# Transparency with blur
+# yabai -m config window_border_blur on
+# yabai -m config active_window_opacity 0.90
+# yabai -m config normal_window_opacity 0.90
+
+
+# divide windows by 2
+yabai -m config split_ratio                0.50
+
+# mouse stuff
+yabai -m config mouse_modifier             cmd
+yabai -m config mouse_action1              resize
+yabai -m config mouse_action2              move
+
+# window border (Off because mac ventura 13 not working properly.)
+yabai -m config window_border on
+yabai -m config window_border_width 2
+yabai -m config active_window_border_color 0xFF89b482
+# yabai -m config normal_window_border_color 0xFF32302f
+# yabai -m config normal_window_border_color 0xFFdfbf8e
+yabai -m config insert_feedback_color        0xFFea6962
+
+# window gaps
+yabai -m config layout                     float
+yabai -m config top_padding                20
+yabai -m config bottom_padding             30
+yabai -m config left_padding               20
+yabai -m config right_padding              20
+yabai -m config window_gap                 25
+yabai -m config external_bar main:28:0
+
+# don't tile unresizable apps
+yabai -m rule --add app="^(Discord|Spotify|Calculator|Software Update|Dictionary|VLC|System Preferences|System Settings|Photo Booth|Archive Utility|Python|LibreOffice|App Store|Activity Monitor)$" manage=off
+yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+
+#yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=window_created action="sketchybar --trigger refresh_current_workspace"
+yabai -m signal --add event=window_destroyed action="sketchybar --trigger refresh_current_workspace"

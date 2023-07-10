@@ -1,0 +1,66 @@
+{
+  "name": "nvim-snippets",
+  "author": "hyeonju",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./python/python.json"
+      },
+      {
+        "language": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+        ],
+        "path": "./javascript/javascript.json"
+      },
+      {
+        "language": [
+          "javascript",
+          "javascriptreact",
+          "typescriptreact",
+          "html"
+        ],
+        "path": "./html.json"
+      },
+      {
+        "language": [
+          "javascript",
+          "javascriptreact",
+          "typescript"
+        ],
+        "path": "./javascript/react.json"
+      },
+      {
+        "language": [
+          "typescriptreact"
+        ],
+        "path": "./javascript/react-ts.json"
+      },
+      {
+        "language": [
+          "typescript"
+        ],
+        "path": "./javascript/typescript.json"
+      },
+      {
+        "language": "json",
+        "path": "./json.json"
+      },
+      {
+        "language": "java",
+        "path": "./java.json"
+      },
+      {
+        "language": "cpp",
+        "path": "./cpp.json"
+      }
+      
+    ]
+  }
+}
