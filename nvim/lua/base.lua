@@ -15,8 +15,8 @@ opt.sidescrolloff = 5
 opt.hlsearch = true
 opt.incsearch = true
 
--- opt.mouse = 'a'
--- opt.clipboard:append('unnamedplus')
+opt.mouse = 'a'
+opt.clipboard:append('unnamedplus')
 
 opt.tabstop = 4
 opt.softtabstop = 4
@@ -25,15 +25,15 @@ opt.expandtab = true
 opt.smartindent = true
 opt.wrap = false
 
--- opt.ignorecase = true
--- opt.smartcase = true
+opt.ignorecase = true
+opt.smartcase = true
 
 opt.swapfile = false
 opt.autoread = true
 vim.bo.autoread = true
 
 opt.signcolumn = 'yes'
--- opt.list = true
+opt.list = true
 
 opt.cursorline = true
 opt.termguicolors = true
@@ -48,4 +48,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 opt.updatetime = 50
--- opt.timeoutlen = 500
+opt.timeoutlen = 500
