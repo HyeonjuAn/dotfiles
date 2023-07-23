@@ -49,7 +49,13 @@ return require('packer').startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
     use 'jose-elias-alvarez/typescript.nvim'
     use 'jose-elias-alvarez/null-ls.nvim'
-    use 'nvim-treesitter/nvim-treesitter'
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        dependencies = {
+            'JoosepAlviste/nvim-ts-context-commentstring',
+        },
+    }
+    use "nvim-treesitter/nvim-treesitter-context"
     use 'windwp/nvim-ts-autotag'
     use 'p00f/nvim-ts-rainbow'
     use 'axelvc/template-string.nvim'
