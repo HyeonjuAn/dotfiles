@@ -8,15 +8,20 @@ function brew() {
   fi
 }
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
+
+bindkey '^ ' autosuggest-accept
+bindkey '√' history-substring-search-up
+bindkey '∫' history-substring-search-down
 
 eval "$(starship init zsh)"
 
 alias vim="nvim"
 alias pip="pip3"
 alias python="python3"
+alias ls="ls -la --color=auto"
 
 # Mac setup for pomo
 alias work="timer 25m && terminal-notifier -message 'Pomodoro'\
@@ -28,5 +33,3 @@ alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
         -title 'Break is over! Get back to work 😬'\
         -appIcon '~/Pictures/pumpkin.png'\
         -sound Crystal"
-
-export PATH=$PATH:/Users/hyeonjuan/.spicetify
