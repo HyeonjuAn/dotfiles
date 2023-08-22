@@ -23,7 +23,7 @@ shift + alt - b : yabai -m window --toggle border
 alt - r : yabai -m space --rotate 90
 
 # toggle window fullscreen zoom
-alt - f : yabai -m window --toggle zoom-fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen; yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # alt - s : yabai -m window --toggle
 # ctrl - s : yabai -m window --toggle sticky;\
