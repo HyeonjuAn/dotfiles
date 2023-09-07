@@ -22,14 +22,13 @@ alias vim="nvim"
 alias pip="pip3"
 alias python="python3"
 alias ls="ls -la --color=auto"
+alias lg="lazygit"
 
 # Mac setup for pomo
 alias work="timer 25m && terminal-notifier -message 'Pomodoro'\
-        -title 'Work Timer is up! Take a Break 😊'\
-        -appIcon '~/Pictures/pumpkin.png'\
+        -title 'Work Timer is up!'\
         -sound Crystal"
         
 alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
-        -title 'Break is over! Get back to work 😬'\
-        -appIcon '~/Pictures/pumpkin.png'\
+        -title 'Break is over!'\
         -sound Crystal"

@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
+    -- nvim v0.7.2
     use 'MattesGroeger/vim-bookmarks'
     use 'tom-anders/telescope-vim-bookmarks.nvim'
     use 'hrsh7th/cmp-nvim-lsp'

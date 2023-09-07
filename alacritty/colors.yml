@@ -3,7 +3,7 @@ schemes:
   gruvbox_material_dark_medium: &gruvbox_material_dark_medium
     primary:
       # background: '0x282828' lighter background
-      background: '0x1d2021'
+      background: '0x292929'
       foreground: '0xdfbf8e'
 
     normal:
@@ -29,7 +29,7 @@ schemes:
 # Colors (Gruvbox dark)
   gruvbox_dark_hard: &gruvbox_dark_hard
       primary:
-        background: '0x1d2021'
+        background: '0x292929'
         foreground: '0xebdbb2'
 
       normal:
