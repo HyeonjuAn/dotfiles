@@ -32,3 +32,10 @@ alias work="timer 25m && terminal-notifier -message 'Pomodoro'\
 alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
         -title 'Break is over!'\
         -sound Crystal"
+
+# bun completions
+[ -s "/Users/hyeonjuan/.bun/_bun" ] && source "/Users/hyeonjuan/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

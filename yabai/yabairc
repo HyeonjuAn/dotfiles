@@ -9,13 +9,12 @@ yabai -m config window_opacity on
 # Transparency
 yabai -m config window_border_blur off
 yabai -m config active_window_opacity 1.00
-yabai -m config active_window_opacity 1.00
-# yabai -m config normal_window_opacity 0.80
+yabai -m config normal_window_opacity 1.00
 #
 # Transparency with blur
 # yabai -m config window_border_blur on
-# yabai -m config active_window_opacity 0.75
-# yabai -m config normal_window_opacity 0.75
+# yabai -m config active_window_opacity 0.80
+# yabai -m config normal_window_opacity 0.80
 
 
 # divide windows by 2

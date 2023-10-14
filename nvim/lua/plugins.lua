@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
         }
     })
     use 'wbthomason/packer.nvim'
+    use 'chriskempson/vim-tomorrow-theme'
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
