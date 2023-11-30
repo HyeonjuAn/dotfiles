@@ -25,11 +25,11 @@ alias ls="ls -la --color=auto"
 alias lg="lazygit"
 
 # Mac setup for pomo
-alias work="timer 25m && terminal-notifier -message 'Pomodoro'\
+alias work="timer 50m && terminal-notifier -message 'Pomodoro'\
         -title 'Work Timer is up!'\
         -sound Crystal"
         
-alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
+alias rest="timer 10m && terminal-notifier -message 'Pomodoro'\
         -title 'Break is over!'\
         -sound Crystal"
 
@@ -39,3 +39,4 @@ alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=$PATH:/Users/hyeonjuan/.spicetify

@@ -2,23 +2,23 @@
 font:
   # Normal (roman) font face
   normal:
-    family: "CaskaydiaCove Nerd Font"
-    style: Regular
+    family: "CaskaydiaCove Nerd Font Mono"
+    style: Light
 
   # Bold font face
   bold:
-    family: "CaskaydiaCove Nerd Font"
+    family: "CaskaydiaCove Nerd Font Mono"
     style: Regular
 
   # Italic font face
   italic:
-    family: "CaskaydiaCove Nerd Font"
-    style: Italic
+    family: "CaskaydiaCove Nerd Font Mono"
+    style: Light Italic
 
   # Bold italic font face
   bold_italic:
-    family: "CaskaydiaCove Nerd Font"
-    style: Regular
+    family: "CaskaydiaCove Nerd Font Mono"
+    style: Regular Italic
 
   # Point size
   size: 12

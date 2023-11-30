@@ -269,6 +269,21 @@ _G.packer_plugins = {
     path = "/Users/hyeonjuan/.local/share/nvim/site/pack/packer/start/vim-bookmarks",
     url = "https://github.com/MattesGroeger/vim-bookmarks"
   },
+  ["vim-dadbod"] = {
+    loaded = true,
+    path = "/Users/hyeonjuan/.local/share/nvim/site/pack/packer/start/vim-dadbod",
+    url = "https://github.com/tpope/vim-dadbod"
+  },
+  ["vim-dadbod-completion"] = {
+    loaded = true,
+    path = "/Users/hyeonjuan/.local/share/nvim/site/pack/packer/start/vim-dadbod-completion",
+    url = "https://github.com/kristijanhusak/vim-dadbod-completion"
+  },
+  ["vim-dadbod-ui"] = {
+    loaded = true,
+    path = "/Users/hyeonjuan/.local/share/nvim/site/pack/packer/start/vim-dadbod-ui",
+    url = "https://github.com/kristijanhusak/vim-dadbod-ui"
+  },
   ["vim-obsession"] = {
     loaded = true,
     path = "/Users/hyeonjuan/.local/share/nvim/site/pack/packer/start/vim-obsession",
@@ -283,6 +298,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/hyeonjuan/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["vim-tomorrow-theme"] = {
+    loaded = true,
+    path = "/Users/hyeonjuan/.local/share/nvim/site/pack/packer/start/vim-tomorrow-theme",
+    url = "https://github.com/chriskempson/vim-tomorrow-theme"
   },
   ["vim-visual-multi"] = {
     loaded = true,

@@ -49,3 +49,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 opt.updatetime = 50
 opt.timeoutlen = 500
+
+vim.api.nvim_create_autocmd('FileType', {
+    pattern = 'dbout',
+    callback = function()
+        vim.opt_local.foldenable = false
+    end
+})

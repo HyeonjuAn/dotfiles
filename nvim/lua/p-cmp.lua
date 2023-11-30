@@ -33,8 +33,8 @@ cmp.setup({
             behavior = cmp.SelectBehavior.Select
         }), { 'i', 'c' }),
         ['<c-b>'] = cmp.mapping(function(fallback)
-            if luasnip.jumpable( -1) then
-                luasnip.jump( -1)
+            if luasnip.jumpable(-1) then
+                luasnip.jump(-1)
             else
                 fallback()
             end
@@ -43,14 +43,27 @@ cmp.setup({
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
         { name = 'luasnip' }, -- For luasnip users.
-    }, {
-        { name = 'buffer' },
+        { name = 'path' },
     }),
     formatting = {
-        format = lspkind.cmp_format({
-            mode = 'symbol_text', -- show only symbol annotations
-            maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
-            ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
-        })
-    }
+        format = function(entry, vim_item)
+            vim_item.menu = ({
+                buffer = '[Buffer]',
+                nvim_lsp = '[LSP]',
+                luasnip = '[Snippet]',
+                path = '[Path]',
+                ['vim-dadbod-completion'] = '[DB]',
+            })[entry.source.name]
+            return vim_item
+        end,
+    },
+})
+
+local autocomplete_group = vim.api.nvim_create_augroup('vimrc_autocompletion', { clear = true })
+vim.api.nvim_create_autocmd('FileType', {
+    pattern = { 'sql', 'mysql', 'plsql' },
+    callback = function()
+        cmp.setup.buffer({ sources = { { name = 'vim-dadbod-completion' } } })
+    end,
+    group = autocomplete_group,
 })

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# Color Palette
+# # Gruvbox Color Palette
 export BLACK=0xff181926
 export WHITE=0xffcad3f5
 export RED=0xffed8796
@@ -37,3 +37,41 @@ export BAR_PINK=0xffD3859B
 export BAR_BLUE=0xff7CAEA3
 export BAR_ACQUA=0xff89B482
 export BAR_YELLOW=0xffE2A84F
+
+
+# Color Palette (Campbell Theme)
+# export BLACK=0xff0C0C0C
+# export WHITE=0xffCACA9E
+# export RED=0xffC50F1F
+# export GREEN=0xff13A10E
+# export BLUE=0xff0037DA
+# export YELLOW=0xffC19C00
+# export ORANGE=0xffC50F1F # Using RED as the closest match
+# export MAGENTA=0xff881798
+# export GREY=0xffCACA9E # Using FOREGROUND as grey approximation
+# export TRANSPARENT=0x00000000
+#
+# # General bar colors
+# export BAR_COLOR=0xff0C0C0C
+# export ICON_COLOR=0xffCACA9E # Color of all icons
+# export LABEL_COLOR=0xffCACA9E # Color of all labels
+# export BACKGROUND_1=0xff0C0C0C
+# export BACKGROUND_2=0xff0C0C0C
+#
+# export POPUP_BACKGROUND_COLOR=0xff0C0C0C
+# export POPUP_BORDER_COLOR=0xffCCCCCC
+#
+# export SHADOW_COLOR=0xff0C0C0C
+#
+# # Custom
+# export BAR_BACKGROUND=0xff0C0C0C
+# export BAR_INACTIVE_ICON=0xffCACA9E
+# export BAR_ACTIVE_ICON=0xffCACA9E
+#
+# export BAR_RED=0xffC50F1F
+# export BAR_ORANGE=0xffC50F1F
+# export BAR_GREEN=0xff13A10E
+# export BAR_PINK=0xff881798
+# export BAR_BLUE=0xff0037DA
+# export BAR_ACQUA=0xff3A96DD
+# export BAR_YELLOW=0xffC19C00

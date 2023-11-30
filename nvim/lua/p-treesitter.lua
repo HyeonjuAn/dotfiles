@@ -1,6 +1,6 @@
 require 'nvim-treesitter.configs'.setup {
     ensure_installed = { "typescript", "javascript", "html", "css", "tsx", "lua", "rust", "json", "graphql", "regex",
-        "prisma", "markdown",
+        "prisma", "markdown", "sql",
         "markdown_inline" },
 
     sync_install = false,
@@ -16,6 +16,9 @@ require 'nvim-treesitter.configs'.setup {
         disable = {}
     },
     autotag = {
+        enable = true
+    },
+    lsp_interop = {
         enable = true
     },
     -- rainbow = {
