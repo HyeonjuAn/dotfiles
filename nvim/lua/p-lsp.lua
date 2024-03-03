@@ -50,7 +50,29 @@ require('mason-lspconfig').setup_handlers({
         })
     end,
     pylsp = function()
-        require('lspconfig').pylsp.setup(lsp_config)
+        require('lspconfig').pylsp.setup(vim.tbl_extend('force', lsp_config, {
+            settings = {
+                pylsp = {
+                    plugins = {
+                        pycodestyle = {
+                            enabled = false, -- Disable pycodestyle if you prefer pylint's conventions
+                        },
+                        pyflakes = {
+                            enabled = false, -- Optionally disable if you rely solely on pylint
+                        },
+                        pylint = {
+                            enabled = true,
+                            executable = "pylint", -- Ensure this matches your environment
+                        },
+                        mypy = {
+                            enabled = true,
+                            live_mode = false -- Run mypy on save, not as you type
+                        },
+                        -- Configure other pylsp plugins as needed
+                    }
+                }
+            }
+        }))
     end,
 })
 

@@ -1,0 +1,26 @@
+import = ["~/.config/alacritty/colors.toml", "~/.config/alacritty/fonts.toml"]
+live_config_reload = true
+# "window.opacity" = 0.2
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[window]
+# opacity = 0.9
+decorations = "buttonless"
+dynamic_title = true
+# history = 10000
+# multiplier = 3
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 244
+lines = 70
+
+[window.padding]
+x = 12
+y = 12

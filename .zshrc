@@ -12,7 +12,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-s
 
 source $ZSH/oh-my-zsh.sh
 
-bindkey '^ ' autosuggest-accept
+bindkey 'ø' autosuggest-accept
 bindkey '√' history-substring-search-up
 bindkey '∫' history-substring-search-down
 
@@ -40,3 +40,4 @@ alias rest="timer 10m && terminal-notifier -message 'Pomodoro'\
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$PATH:/Users/hyeonjuan/.spicetify
+export PATH=$PATH:/Users/hyeonjuan/.composer/vendor/bin
