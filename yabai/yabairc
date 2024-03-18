@@ -51,10 +51,11 @@ yabai -m config external_bar main:28:0
 # yabai -m rule --add app="^(Discord|Spotify|Calculator|Software Update|Dictionary|VLC|System Preferences|System Settings|Photo Booth|Archive Utility|Python|LibreOffice|App Store|Activity Monitor)$" manage=off
 # yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 # yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
-yabai -m rule --add app="^(Stickies|Microsoft Word|Microsoft PowerPoint|Microsoft Teams classic|Discord|Spotify|Calculator|Software Update|Dictionary|VLC|System Preferences|System Settings|Photo Booth|Archive Utility|Python|LibreOffice|App Store|Activity Monitor|Firefox|MySQLWorkbench|RapidAPI|FaceTime|zoom.us)" opacity=1
+yabai -m rule --add app="^(Stickies|Microsoft Word|Microsoft PowerPoint|Microsoft Teams classic|Discord|Spotify|Calculator|Software Update|Dictionary|VLC|System Preferences|System Settings|Photo Booth|Archive Utility|Python|LibreOffice|App Store|Activity Monitor|Firefox|MySQLWorkbench|RapidAPI|FaceTime|zoom.us|Google Chrome)" opacity=1
 
 #yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
 yabai -m signal --add event=window_created action="sketchybar --trigger refresh_current_workspace"
 yabai -m signal --add event=window_destroyed action="sketchybar --trigger refresh_current_workspace"
+yabai -m signal --add event=space_changed action="sketchybar --trigger refresh_current_workspace"
 
 borders active_color=0xFF89b482 inactive_color=0xff494d64 width=5.0 &
