@@ -41,3 +41,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$PATH:/Users/hyeonjuan/.spicetify
 export PATH=$PATH:/Users/hyeonjuan/.composer/vendor/bin
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
