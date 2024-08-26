@@ -77,6 +77,6 @@ require('mason-lspconfig').setup_handlers({
 })
 
 
--- vim.keymap.set('n', '<leader>o', '<cmd>TypescriptOrganizeImports<cr>')
--- vim.keymap.set('n', '<leader>a', '<cmd>TypescriptAddMissingImports<cr>')
+vim.keymap.set('n', '<leader>o', '<cmd>TypescriptOrganizeImports<cr>')
+vim.keymap.set('n', '<leader>a', '<cmd>TypescriptAddMissingImports<cr>')
 -- vim.keymap.set('n', '<leader>r', '<cmd>TypescriptRemoveUnused<cr>')

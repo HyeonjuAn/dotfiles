@@ -1,3 +1,4 @@
 # Remove github copilot folder
 github-copilot
 nvim/pack
+.DS_Store
