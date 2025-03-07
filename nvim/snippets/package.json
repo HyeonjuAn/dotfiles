@@ -59,8 +59,11 @@
       {
         "language": "cpp",
         "path": "./cpp.json"
-      }
-      
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./html.json"
+      },
     ]
   }
 }
