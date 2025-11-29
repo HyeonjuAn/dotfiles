@@ -24,28 +24,140 @@
 # cyan    = '#89b482'
 # white   = '#dfbf8e'
 
-# Colors (Gruvbox Material Hard)
+# # Colors (Gruvbox Material Hard)
+#
+# [colors.primary]
+# background = '#1d2021'
+# foreground = '#d4be98'
+#
+# [colors.normal]
+# black   = '#282828'
+# red     = '#ea6962'
+# green   = '#a9b665'
+# yellow  = '#d8a657'
+# blue    = '#7daea3'
+# magenta = '#d3869b'
+# cyan    = '#89b482'
+# white   = '#d4be98'
+#
+# [colors.bright]
+# black   = '#928374'
+# red     = '#ea6962'
+# green   = '#a9b665'
+# yellow  = '#e3a84e'
+# blue    = '#7daea3'
+# magenta = '#d3869b'
+# cyan    = '#89b482'
+# white   = '#d4be98'
 
-[colors.primary]
-background = '#1d2021'
-foreground = '#d4be98'
-
-[colors.normal]
-black   = '#282828'
-red     = '#ea6962'
-green   = '#a9b665'
-yellow  = '#d8a657'
-blue    = '#7daea3'
-magenta = '#d3869b'
-cyan    = '#89b482'
-white   = '#d4be98'
+# Upstream: github.com/bluz71/vim-moonfly-colors
 
 [colors.bright]
-black   = '#928374'
-red     = '#ea6962'
-green   = '#a9b665'
-yellow  = '#e3a84e'
-blue    = '#7daea3'
-magenta = '#d3869b'
-cyan    = '#89b482'
-white   = '#d4be98'
+black = "#949494"
+blue = "#74b2ff"
+cyan = "#85dc85"
+green = "#36c692"
+magenta = "#ae81ff"
+red = "#ff5189"
+white = "#e4e4e4"
+yellow = "#c6c684"
+
+[colors.cursor]
+cursor = "#8e8e8e"
+text = "#080808"
+
+[colors.normal]
+black = "#323437"
+blue = "#80a0ff"
+cyan = "#79dac8"
+green = "#8cc85f"
+magenta = "#cf87e8"
+red = "#ff5454"
+white = "#c6c6c6"
+yellow = "#e3c78a"
+
+[colors.primary]
+background = "#080808"
+bright_foreground = "#eeeeee"
+foreground = "#bdbdbd"
+
+[colors.selection]
+background = "#b2ceee"
+text = "#080808"
+
+# # Catppuccin latte
+# [colors.primary]
+# background = '#EFF1F5' # base
+# foreground = '#4C4F69' # text
+# # Bright and dim foreground colors
+# dim_foreground = '#4C4F69' # text
+# bright_foreground = '#4C4F69' # text
+#
+# # Cursor colors
+# [colors.cursor]
+# text = '#EFF1F5' # base
+# cursor = '#DC8A78' # rosewater
+#
+# [colors.vi_mode_cursor]
+# text = '#EFF1F5' # base
+# cursor = '#7287FD' # lavender
+#
+# # Search colors
+# [colors.search.matches]
+# foreground = '#EFF1F5' # base
+# background = '#6C6F85' # subtext0
+#
+# [colors.search.focused_match]
+# foreground = '#EFF1F5' # base
+# background = '#40A02B' # green
+#
+# [colors.footer_bar]
+# foreground = '#EFF1F5' # base
+# background = '#6C6F85' # subtext0
+#
+# # Keyboard regex hints
+# [colors.hints.start]
+# foreground = '#EFF1F5' # base
+# background = '#DF8E1D' # yellow
+#
+# [colors.hints.end]
+# foreground = '#EFF1F5' # base
+# background = '#6C6F85' # subtext0
+#
+# # Selection colors
+# [colors.selection]
+# text = '#EFF1F5' # base
+# background = '#DC8A78' # rosewater
+#
+# # Normal colors
+# [colors.normal]
+# black = '#5C5F77' # subtext1
+# red = '#D20F39' # red
+# green = '#40A02B' # green
+# yellow = '#DF8E1D' # yellow
+# blue = '#1E66F5' # blue
+# magenta = '#EA76CB' # pink
+# cyan = '#179299' # teal
+# white = '#ACB0BE' # surface2
+#
+# # Bright colors
+# [colors.bright]
+# black = '#6C6F85' # subtext0
+# red = '#D20F39' # red
+# green = '#40A02B' # green
+# yellow = '#DF8E1D' # yellow
+# blue = '#1E66F5' # blue
+# magenta = '#EA76CB' # pink
+# cyan = '#179299' # teal
+# white = '#BCC0CC' # surface1
+#
+# # Dim colors
+# [colors.dim]
+# black = '#5C5F77' # subtext1
+# red = '#D20F39' # red
+# green = '#40A02B' # green
+# yellow = '#DF8E1D' # yellow
+# blue = '#1E66F5' # blue
+# magenta = '#EA76CB' # pink
+# cyan = '#179299' # teal
+# white = '#ACB0BE' # surface2

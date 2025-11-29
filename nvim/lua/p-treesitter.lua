@@ -1,5 +1,5 @@
 require 'nvim-treesitter.configs'.setup {
-    ensure_installed = { "typescript", "javascript", "html", "css", "tsx", "lua", "rust", "json", "graphql", "regex",
+    ensure_installed = { "typescript", "javascript", "html", "css", "tsx", "lua", "rust", "json", "graphql", "regex", "c_sharp",
         "prisma", "markdown", "sql",
         "markdown_inline" },
 

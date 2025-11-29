@@ -21,18 +21,25 @@ local lsp_config = {
 
 require('mason-lspconfig').setup_handlers({
     function(server_name)
+        local lsp = require('lspconfig')
         require('lspconfig')[server_name].setup(lsp_config)
     end,
     lua_ls = function()
-        require('lspconfig').lua_ls.setup(vim.tbl_extend('force', lsp_config, {
+        local lsp = require('lspconfig')
+        lsp.lua_ls.setup(vim.tbl_extend('force', lsp_config, {
             settings = {
                 Lua = {
                     diagnostics = {
                         globals = { 'vim' }
                     }
                 }
-            }
+            },
+            capabilities = capabilities
         }))
+
+        lsp.csharp_ls.setup({
+            capabilities = capabilities,
+        })
     end,
     tsserver = function()
         require('typescript').setup({

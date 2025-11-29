@@ -25,7 +25,7 @@ sketchybar --add       event           spotify_change $SPOTIFY_EVENT        \
                                          popup.background.border_width=2                   \
                                          popup.background.corner_radius=9                  \
                                          popup.background.border_color=$BAR_GREEN \
-                                         popup.background.color=$BAR_BACKGROUND    \
+                                         popup.background.color=$BAR_COLOR        \
                                          popup.background.shadow.drawing=on \
                     click_script="sketchybar -m --set \$NAME popup.drawing=toggle" \
            --subscribe spotify.anchor  mouse.entered mouse.exited           \

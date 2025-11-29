@@ -48,7 +48,7 @@ sketchybar --add  item                 spaces.right.spacer left                 
 sketchybar --add  bracket     spaces   spaces.left.spacer                            \
                                        '/space\..*/'                                 \
                                        spaces.right.spacer                           \
-           --set  spaces               background.color=$BAR_BACKGROUND              \
+           --set  spaces               background.color=$TRANSPARENT\
                                        background.corner_radius=4                    \
                                        background.height=32                          \
                                        background.y_offset=5
