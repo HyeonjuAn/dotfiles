@@ -2,9 +2,9 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 8
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.termguicolors = true
@@ -213,14 +213,15 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
-require 'lspconfig'.jdtls.setup {}
-require 'lspconfig'.lua_ls.setup {}
-require 'lspconfig'.clangd.setup {}
-require 'lspconfig'.ts_ls.setup {}
-require 'lspconfig'.pyright.setup {}
+-- require 'lspconfig'.jdtls.setup {}
+-- require 'lspconfig'.lua_ls.setup {}
+-- require 'lspconfig'.clangd.setup {}
+-- require 'lspconfig'.ts_ls.setup {}
+-- require 'lspconfig'.pyright.setup {}
 -- require'lspconfig'.csharp_ls.setup{}
 
 local cmp = require('cmp')
+local luasnip = require('luasnip')
 
 cmp.setup({
   sources = {
@@ -250,7 +251,13 @@ cmp.setup({
     ['<C-j>'] = cmp.mapping(cmp.mapping.select_next_item({
       behavior = cmp.SelectBehavior.Select
     }), { 'i', 'c' }),
+    ['<D-j>'] = cmp.mapping(cmp.mapping.select_next_item({
+      behavior = cmp.SelectBehavior.Select
+    }), { 'i', 'c' }),
     ['<C-k>'] = cmp.mapping(cmp.mapping.select_prev_item({
+      behavior = cmp.SelectBehavior.Select
+    }), { 'i', 'c' }),
+    ['<D-k>'] = cmp.mapping(cmp.mapping.select_prev_item({
       behavior = cmp.SelectBehavior.Select
     }), { 'i', 'c' }),
     ['<c-b>'] = cmp.mapping(function(fallback)
@@ -288,7 +295,7 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here
   -- with the ones you want to install
-  ensure_installed = { 'jdtls', 'lua_ls', 'rust_analyzer', 'ts_ls', 'pyright', 'clangd' },
+  ensure_installed = { 'lua_ls', 'rust_analyzer', 'ts_ls', 'pyright', 'clangd' },
   handlers = {
     function(server_name)
       require('lspconfig')[server_name].setup({})

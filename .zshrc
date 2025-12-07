@@ -17,20 +17,21 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-s
 source $ZSH/oh-my-zsh.sh
 
 # Custom key bindings for zsh-autosuggestions and history substring search
-bindkey 'ø' autosuggest-accept
-bindkey '√' history-substring-search-up
-bindkey '∫' history-substring-search-down
+bindkey '^O' autosuggest-accept
 
 # Initialize Starship prompt
 eval "$(starship init zsh)"
 
 # Aliases
+alias t="tmux"
+alias s="source ~/.zshrc"
 alias vim="nvim"
 alias pip="/opt/homebrew/bin/pip3.11"
 # alias python="python3"
 alias python="/opt/homebrew/bin/python3.11"
 alias ls="ls -la --color=auto"
 alias lg="lazygit"
+alias c="codex"
 
 # Mac setup for Pomodoro timer using terminal-notifier
 alias work="timer 50m && terminal-notifier -message 'Pomodoro' \
